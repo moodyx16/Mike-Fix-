@@ -9,7 +9,7 @@ sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db (same thing as above
 
 **For the most part these are the only important ones. The latter two are just diagnostic steps. The first is an inconvenience at worst as every app you use that requires the microphone will now ask you for permissions again. 
 
-**THIS IS THE ACTUAL COMMAND-SET SHOWN IN THE VIDEO.**
+**THIS IS THE ACTUAL COMMAND-SET SHOWN IN THE VIDEO. AND PROBABLY THE ONE YOU'RE LOOKING FOR.**
 
 cd "$HOME/Library/Application Support/Steam/steamapps/common/DELTARUNE"
 echo '{"com.apple.security.device.audio-input":true,"com.apple.security.cs.disable-library-validation":true,"com.apple.security.cs.allow-dyld-environment-variables":true}' | plutil -convert xml1 -o /tmp/ent.plist -
