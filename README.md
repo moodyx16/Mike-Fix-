@@ -11,10 +11,10 @@ sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db (same thing as above
 
 **THIS IS THE ACTUAL COMMAND-SET SHOWN IN THE VIDEO. AND PROBABLY THE ONE YOU'RE LOOKING FOR.**
 
-cd "$HOME/Library/Application Support/Steam/steamapps/common/DELTARUNE"
-echo '{"com.apple.security.device.audio-input":true,"com.apple.security.cs.disable-library-validation":true,"com.apple.security.cs.allow-dyld-environment-variables":true}' | plutil -convert xml1 -o /tmp/ent.plist -
+1. cd "$HOME/Library/Application Support/Steam/steamapps/common/DELTARUNE"
+2. echo '{"com.apple.security.device.audio-input":true,"com.apple.security.cs.disable-library-validation":true,"com.apple.security.cs.allow-dyld-environment-variables":true}' | plutil -convert xml1 -o /tmp/ent.plist -
 codesign --force --deep --options runtime --entitlements /tmp/ent.plist --sign - DELTARUNE.app
-tccutil reset Microphone
+3. tccutil reset Microphone
 
 **AGAIN IF THIS BREAKS TRY VERIFYING YOUR GAME FILES AGAIN!!!**
 Thank You.
